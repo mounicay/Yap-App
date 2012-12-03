@@ -1,12 +1,12 @@
 <html>
-<div id="result-cell"></div>
+<div id="result-cell"><h1> Sample </h1></div>
 <script type="text/javascript">
 try {
   function request() {
       // preapare array with key value pair
           var params = {};
-        //  params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.NONE;
-        // params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+          params[gadgets.io.RequestParameters.AUTHORIZATION] = gadgets.io.AuthorizationType.SIGNED;
+        //  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
 //      params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
       params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.GET;
     //  params[gadgets.io.RequestParameters.HEADERS] = {"Content-Type":"application/json", "Content-Length": "2","User-Agent":"YahooMessenger/1.0 (OpenSocial messenger; 1.0.0.0)"};
@@ -15,10 +15,8 @@ try {
       // makeRequest call
           //var url = "http://developer.messenger.yahooapis.com/v1/session?realm=yahooapis.com";
  //         var url = "http://dev-ydn.rest-core.msg.yahoo.com/v1/session?realm=yahooapis.com";
-        var  url = "http://query.yahooapis.com/v1/yql?q=SELECT%20*%20from%20social.profile%20WHERE%20guid%3Dme";
-//var url ="http://query.yahooapis.com/v1/yql?q=%20SELECT%20*%20FROM%20social.contacts%20WHERE%20guid%3D4NTFPMC7SIKDYW7MP64PNRCBFE";
-//var url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yap.messenger.buddy%20where%20guid%3Dme";
-//url = "http://query.yahooapis.com/v1/yql?q=select%20*%20from%20yahoo.identity%20where%20yid%20in%20(SELECT%20fields.value%20from%20social.contacts(500%2C200)%20WHERE%20guid%3Dme%20and%20fields.type%3D'yahooid')";
+       var  url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yap.messenger.buddy%20where%20guid%3Dme";
+//        url = "http://query.yahooapis.com/v1/yql?q=select%20*%20from%20yahoo.identity%20where%20yid%20in%20(SELECT%20fields.value%20from%20social.contacts(500%2C200)%20WHERE%20guid%3Dme%20and%20fields.type%3D'yahooid')";
           gadgets.io.makeRequest(url, response, params);
   };
 
@@ -35,4 +33,6 @@ catch(e) {
 }
 </script>
 </html>
-   
+~                                                                                                                                                                                                         
+~                                                                                                                                                                                                         
+~        
