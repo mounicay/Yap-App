@@ -15,7 +15,7 @@ try {
       // makeRequest call
           //var url = "http://developer.messenger.yahooapis.com/v1/session?realm=yahooapis.com";
  //         var url = "http://dev-ydn.rest-core.msg.yahoo.com/v1/session?realm=yahooapis.com";
-       var  url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yap.messenger.buddy%20where%20guid%3Dme";
+       var  url = "http://query.yahooapis.com/v1/yql?q=select%20*%20from%20yap.messenger.buddy%20where%20guid%3Dme";
 //        url = "http://query.yahooapis.com/v1/yql?q=select%20*%20from%20yahoo.identity%20where%20yid%20in%20(SELECT%20fields.value%20from%20social.contacts(500%2C200)%20WHERE%20guid%3Dme%20and%20fields.type%3D'yahooid')";
           gadgets.io.makeRequest(url, response, params);
   };
