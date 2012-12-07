@@ -52,7 +52,7 @@
     </Content>
     
     <!-- The content of this section will render in Canvas View. -->
-    <Content type="html" view="YahooFullView, canvas" href="http://ws1.mlk.mud.yahoo.com/kunalk/samplee3.html">
+    <Content type="html" view="YahooFullView, canvas" href="http://ws1.mlk.mud.yahoo.com/kunalk/samplee2.html">
     </Content>
         
     <!-- The content of this CDATA will render if no other content sections are applicable. -->
